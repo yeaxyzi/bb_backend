@@ -15,7 +15,7 @@ spring:
       # host: localhost
       host: redis
       username: default
-      password: beyond
+      password: ${REDIS_PASSWORD}
       port: 6379
   servlet:
     multipart:
