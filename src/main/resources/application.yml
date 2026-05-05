@@ -24,11 +24,13 @@ spring:
   mail:
     default-encoding: UTF-8
     host: smtp.gmail.com
-    port: 587
+    # port: 587
+    port: 465
     username: ${spring.mail.username}
     password: ${spring.mail.password}
     properties:
       mail.smtp.auth: true
+      mail.smtp.ssl.enable: true
       mail.smtp.starttls.enable: true
   config:
     import: "optional:application-secret.yml"
