@@ -5,6 +5,8 @@ services:
     restart: always
     ports:
       - "8080:8080"
+    volumes:
+      - ~/application-secret.yml:/app/application-secret.yml
     depends_on:
       - db
       - redis
