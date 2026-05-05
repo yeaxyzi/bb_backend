@@ -93,6 +93,7 @@ public class SecurityConfig {
         // 어떤 주소에서 오는 요청 허용할지
         config.addAllowedOrigin("http://localhost:5173"); // Vue 기본 포트
         config.addAllowedOrigin("http://161.33.207.230");
+        config.addAllowedOrigin("http://beatbuddy.local:30080");
         // 어떤 HTTP 메서드 허용할지
         config.addAllowedOriginPattern("*.trycloudflare.com");
 
