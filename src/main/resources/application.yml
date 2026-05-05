@@ -60,3 +60,8 @@ app:
 
 rapidapi:
   track-analysis-host: track-analysis.p.rapidapi.com
+
+logging:
+  level:
+    org.springframework.mail: DEBUG
+    com.sun.mail: DEBUG
