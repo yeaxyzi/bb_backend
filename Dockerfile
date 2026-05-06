@@ -4,6 +4,7 @@ WORKDIR /app
 COPY . .
 RUN gradle build -x test --no-daemon
 
+
 # 2단계 - 실행
 FROM eclipse-temurin:21-jdk-jammy
 WORKDIR /app
