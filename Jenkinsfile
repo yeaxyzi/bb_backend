@@ -63,6 +63,7 @@ pipeline {
                         build job: 'beatbuddy-k8s-manifests',
                             parameters: [
                                 string(name: 'DOCKER_IMAGE_VERSION', value: "${DOCKER_IMAGE_VERSION}")
+                                string(name: 'SERVICE', value: 'backend')
                             ],
                             wait: true
                     }
